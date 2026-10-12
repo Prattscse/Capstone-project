@@ -1,0 +1,69 @@
+{
+  "source_zip": "CICIDS2017 MachineLearningCSV.zip (uploaded by user; official CSV archive)",
+  "source_csv_files": 8,
+  "raw_rows_read": 2830743,
+  "valid_rows_after_finite_numeric_filter": 2827876,
+  "invalid_or_unusable_rows_skipped": 2867,
+  "unmapped_label_rows": 0,
+  "clean_valid_counts_by_priority_before_sampling": {
+    "0": 2271320,
+    "2": 426543,
+    "3": 128057,
+    "4": 1956
+  },
+  "sample_counts_by_priority": {
+    "0": 20000,
+    "2": 20000,
+    "3": 20000,
+    "4": 1956
+  },
+  "cap_per_priority": 20000,
+  "feature_columns_before_constant_filter": 77,
+  "constant_features_removed_on_sample": [
+    "Bwd Avg Bulk Rate",
+    "Bwd Avg Bytes/Bulk",
+    "Bwd Avg Packets/Bulk",
+    "Bwd PSH Flags",
+    "Bwd URG Flags",
+    "Fwd Avg Bulk Rate",
+    "Fwd Avg Bytes/Bulk",
+    "Fwd Avg Packets/Bulk"
+  ],
+  "model_input_feature_count_before_PCA": 69,
+  "pca_components": 12,
+  "pca_explained_variance_ratio_sum_on_training_sample": 0.9672620296478271,
+  "train_rows": 46467,
+  "test_rows": 15489,
+  "training_priority_counts": {
+    "0": 15000,
+    "2": 15000,
+    "3": 15000,
+    "4": 1467
+  },
+  "test_priority_counts": {
+    "0": 5000,
+    "2": 5000,
+    "3": 5000,
+    "4": 489
+  },
+  "priority_mapping": {
+    "0": "Normal / benign traffic",
+    "2": "Medium: CVSS score 4.0-6.9 (DoS, scans, Patator, web brute force/XSS, infiltration)",
+    "3": "High: CVSS score 7.0-8.9 (DDoS, Heartbleed, SQL injection)",
+    "4": "Critical: CVSS score 9.0-10.0 (Bot)"
+  },
+  "limitations": [
+    "This is a reconstructed experiment, not a faithful reproduction of the authors' original trained-model results.",
+    "The original GitHub ZIP contains Git LFS pointers instead of the five processed CSV files; the fitted PCA transform is not available in the supplied files.",
+    "CVSS-to-priority labels were reconstructed from the paper's description and cited CVSS score table; they may differ from the authors' exact row-level annotation.",
+    "Only a capped random sample per priority class was used for manageable runtime; class-balanced test metrics do not represent natural SOC traffic prevalence.",
+    "Vote agreement is not a calibrated probability and threshold evaluation does not simulate the full RL agent or real analyst outcomes."
+  ],
+  "runtime_versions": {
+    "python": "3.13.5",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5",
+    "scikit_learn": "1.8.0",
+    "xgboost": "3.1.3"
+  }
+}
