@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Raw datasets and local downloads
+MachineLearningCSV.zip
+*.pcap
+*.pcapng
+
+# Generated model and row-level prediction artefacts
+Experiments_Confidence_Threshold_Reconstructed/results/models/
+Experiments_Confidence_Threshold_Reconstructed/results/test_predictions.csv
