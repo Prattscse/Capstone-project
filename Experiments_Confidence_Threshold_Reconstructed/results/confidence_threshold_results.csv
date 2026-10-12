@@ -1,0 +1,4 @@
+agreement_threshold,test_alerts,majority_vote_baseline_accuracy_percent,majority_vote_macro_f1,deferred_to_analyst_count,deferred_to_analyst_percent,auto_processed_count,auto_processed_percent,auto_processed_accuracy_percent,deferred_accuracy_percent_for_analysis_only,high_critical_auto_processed_count,high_critical_underprioritized_auto_count,high_critical_underprioritization_rate_among_auto_percent
+0.5,15489,98.6507,0.9857,0,0.0,15489,100.0,98.6507,,5489,22,0.4008
+0.75,15489,98.6507,0.9857,645,4.1642,14844,95.8358,98.8548,93.9535,5359,17,0.3172
+1.0,15489,98.6507,0.9857,4607,29.7437,10882,70.2563,99.7886,95.9627,4892,9,0.184
