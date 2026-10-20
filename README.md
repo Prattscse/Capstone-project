@@ -64,7 +64,3 @@ This is a **reconstructed experiment**, not an exact reproduction of the origina
 - Priyanshu Raman
 - Anjali Kumari
 - Sarthak Singh
-
----
-
-This repository is maintained for academic work. Please document changes to preprocessing, labels or sampling so that results remain understandable and reproducible.
